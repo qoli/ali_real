@@ -166,3 +166,16 @@ classpath 'com.android.tools.build:gradle:3.6.4'
 確保 **Build Phases** 存在上述文件。
 
 ![image-20210325234049527](https://gitee.com/qoli/u-pic/raw/master/uPic/image-20210325234049527.png)
+
+#### 修改 ali_real_person.podspec 文件
+
+```
+  s.info_plist = { 'CFBundleIdentifier' => 'com.abc.efg.ali-real-person' }
+  s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER': 'com.abc.efg.ali-real-person' }
+```
+
+到最后 end 之前
+
+文件位置请查看图片
+
+![image-20210503211121246](https://gitee.com/qoli/u-pic/raw/master/uPic/image-20210503211121246.png)
